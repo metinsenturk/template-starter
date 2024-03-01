@@ -1,0 +1,32 @@
+{
+    "id": "python-with-pipenv",
+    "version": "1.0.0",
+    "name": "Python with Pipenv",
+    "description": "A python project setup with pipenv as a default venv manager. You can launch a notebook with the venv right away!",
+    "documentationURL": "https://github.com/devcontainers/template-starter/tree/main/src/color",
+    "licenseURL": "https://github.com/devcontainers/template-starter/blob/main/LICENSE",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "Debian version (use bullseye on local arm64/Apple Silicon):",
+            "proposals": [
+                "1-3.12-bullseye",
+                "1-3.12-buster",
+                "1-3.11-bullseye"
+            ],
+            "default": "bullseye"
+        },
+        "containerName": {
+            "type": "string",
+            "description": "Name of the container?",
+            "proposals": [
+                "project-project",
+                "junk-myproject"
+            ],
+            "default": "project-project"
+        }
+    },
+    "platforms": [
+        "Any"
+    ]
+}
